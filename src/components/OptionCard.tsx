@@ -1,25 +1,17 @@
 // src/components/OptionCard.tsx
-interface Option {
-  id: number;
-  icon: string; // emoji or icon string
-  title: string;
-  description: string;
-}
-
 interface OptionCardProps {
-  option: Option;
+  option: {
+    id: number;
+    icon: string;
+    title: string;
+  };
 }
 
-const OptionCard: React.FC<OptionCardProps> = ({ option }) => {
+export default function OptionCard({ option }: OptionCardProps) {
   return (
-    <div className="bg-white rounded-2xl shadow p-4 flex flex-col items-center text-center">
-      <div className="bg-headerCurve/20 rounded-full p-4 mb-2 text-2xl">
-        {option.icon}
-      </div>
-      <h3 className="font-semibold text-gray-800">{option.title}</h3>
-      <p className="text-xs text-gray-500">{option.description}</p>
+    <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow">
+      <div className="text-2xl mb-2">{option.icon}</div>
+      <p className="font-semibold text-center">{option.title}</p>
     </div>
   );
-};
-
-export default OptionCard;
+}

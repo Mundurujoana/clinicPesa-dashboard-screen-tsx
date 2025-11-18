@@ -33,23 +33,25 @@ export default function TabNavigation({ activeTab, onTabChange }: TabNavigationP
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-4 border-b border-borderGray w-full flex-wrap justify-center">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => onTabChange(tab.id)}
-            className={`
-              pb-2 px-2 text-xs sm:text-sm font-semibold transition-colors relative text-center
-              ${activeTab === tab.id ? "text-headerCurve" : "text-gray-400 hover:text-gray-700"}
-            `}
-          >
-            {tab.label}
-            {activeTab === tab.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-warmYellow rounded-full"></div>
-            )}
-          </button>
-        ))}
-      </div>
+<div className="flex gap-4 border-b border-borderGray w-full justify-center">
+  {tabs.map((tab) => (
+    <button
+      key={tab.id}
+      onClick={() => onTabChange(tab.id)}
+      className={`
+        pb-2 px-2 text-xs sm:text-sm font-bold transition-colors relative text-center
+        whitespace-nowrap
+        ${activeTab === tab.id ? "text-headerCurve" : "text-gray-400 hover:text-gray-700"}
+      `}
+    >
+      {tab.label}
+      {activeTab === tab.id && (
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-warmYellow rounded-full"></div>
+      )}
+    </button>
+  ))}
+</div>
+
     </div>
   );
 }

@@ -2,10 +2,10 @@
 import OptionCard from "./OptionCard";
 
 const options = [
-  { id: 1, icon: "💳", title: "Pay Medical Bill", description: "Settle medical expenses" },
-  { id: 2, icon: "🤝", title: "Get Loan", description: "Quick personal loans" },
-  { id: 3, icon: "👥", title: "Join MaMas", description: "Community savings group" },
-  { id: 4, icon: "✓", title: "My Approvals", description: "View approved requests" },
+  { id: 1, icon: "💳", title: "Pay Medical Bill" },
+  { id: 2, icon: "🤝", title: "Get Loan" },
+  { id: 3, icon: "👥", title: "Join MaMas" },
+  { id: 4, icon: "✓", title: "My Approvals" },
 ];
 
 export default function AccountOptions() {

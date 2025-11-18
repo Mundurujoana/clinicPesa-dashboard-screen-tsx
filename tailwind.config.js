@@ -4,14 +4,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        headerCurve: "#014768", // the curved teal header
-        savingsBg: "#ccdce3",   // Savings card small badge background
-        savingsText: "#004f71", // Savings balance text
-        warmYellow: "#FFC107",  // active tab underline
-        graySoft: "#F7F7F7",    // background
-        borderGray: "#e0e0e0",  // borders for cards
+        headerCurve: "#004464", 
+        savingsBg: "#ccdce3",   
+        appText: "#004f71", 
+        warmYellow: "#ffcb05", 
+        graySoft: "#f1f1f1",    
+        borderGray: "#e0e0e0",  
+        grayText: "#666666", 
+        tabgrayText:"#afafaf",
+        white: "#ffffff",
+
+
+      },
+      fontFamily: {
+        leagueSpartan: ['"League Spartan"', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};

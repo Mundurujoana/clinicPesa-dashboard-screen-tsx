@@ -1,17 +1,18 @@
-// src/components/OptionCard.tsx
 interface OptionCardProps {
   option: {
     id: number;
-    icon: string;
+    icon: React.ElementType;
     title: string;
   };
 }
 
 export default function OptionCard({ option }: OptionCardProps) {
+  const Icon = option.icon;
+
   return (
-    <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow">
-      <div className="text-2xl mb-2">{option.icon}</div>
-      <p className="font-semibold text-center">{option.title}</p>
+    <div className="flex flex-col items-center p-3 bg-white rounded-xl shadow border border-borderGray">
+      <Icon className="w-6 h-6 text-appText mb-2" />
+      <p className="font-semibold text-center text-grayText">{option.title}</p>
     </div>
   );
 }

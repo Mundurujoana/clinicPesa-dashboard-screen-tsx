@@ -1,11 +1,13 @@
 import OptionCard from './OptionCard';
-import { CreditCard, Handshake, Users, CheckCircle } from 'lucide-react';
+import { Users, CircleCheck } from 'lucide-react';
+import LoanIcon from '../assets/icons/loan.png';
+import billIcon from '../assets/icons/bill.png';
 
 const options = [
-  { id: 1, icon: CreditCard, title: 'Pay Medical Bill' },
-  { id: 2, icon: Handshake, title: 'Get Loan' },
+  { id: 1, icon: billIcon, title: 'Pay Medical Bill', isImage: true },
+  { id: 2, icon: LoanIcon, title: 'Get Loan', isImage: true },
   { id: 3, icon: Users, title: 'Join MaMas' },
-  { id: 4, icon: CheckCircle, title: 'My Approvals' },
+  { id: 4, icon: CircleCheck, title: 'My Approvals' }, // use Big variant
 ];
 
 export default function AccountOptions() {

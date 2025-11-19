@@ -25,7 +25,7 @@ const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave 
       </div>
 
       <div className="flex mt-2 text-grayText  text-[9px]">
-        <div className="flex space-x-1 ml-5">
+        <div className="flex space-x-1 ml-8">
           <span>Frequency:</span>
           <span className="font-semibold">{frequency}</span>
         </div>

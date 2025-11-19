@@ -1,33 +1,47 @@
-clinicPesa Dashboard Screen
-Overview
+# clinicPesa Home Dashboard
 
-This project is a React implementation of the clinicPesa Home Dashboard Screen, recreated from the provided UI design. The goal is to replicate the layout, components, and styling accurately using React with Tailwind CSS.
+## Overview
 
-The dashboard includes a top header, savings card, navigation tabs, and action cards designed for mobile responsiveness and a clean, professional interface.
+This project is a frontend implementation of the **clinicPesa home dashboard** as part of a technical assignment. The goal is to recreate the provided UI design using **React** with either **JavaScript or TypeScript**.
 
-Features
+---
 
-Top Header
-Displays the app name, greeting message, back arrow, and close icon.
+## Assignment Requirements
 
-Savings Card
-Shows current balance, saving frequency, autosave amount, and a toggle eye icon.
+### What to Build
 
-Navigation Tabs
-Includes Account Options, Invest, and Transactions tabs with active indicators.
+- **Top Bar**
+  - Displays the app name (`clinicPesa`)
+  - Greeting message for the user
 
-Action Cards
+- **Savings Card**
+  - Balance
+  - Frequency
+  - AutoSave amount
+  - Eye icon
 
-Pay Medical Bill
+- **Tabs**
+  - Account Options
+  - Invest
+  - Transactions
 
-Get Loan
+- **Four Action Cards**
+  - Pay Medical Bill
+  - Get Loan
+  - Join MaMas
+  - My Approvals
 
-Join MaMas
+### Notes
+- Free to use any tools, libraries, or methods that help complete the assignment effectively.
+- The final result should be **clean, organized, and easy to follow**.
 
-My Approvals
+---
 
-Responsive Design
-Works well on mobile-first screens with a clean layout.
+## Code Expectations
 
-Reusable Components
-Components are modular and reusable for future development.
+- Clear and organized **component structure**
+- Well-structured **folders**
+- **Mobile-first responsive layout**
+
+---
+

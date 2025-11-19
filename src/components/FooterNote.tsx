@@ -1,4 +1,5 @@
 // src/components/FooterNote.tsx
+
 const FooterNote: React.FC = () => {
   return (
     <p className="text-center text-xs mb-4 font-bold text-grayText">

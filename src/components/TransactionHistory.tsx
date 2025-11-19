@@ -1,4 +1,5 @@
 // src/components/TransactionHistory.tsx
+
 interface Transaction {
   id: number;
   type: string;

@@ -1,3 +1,5 @@
+// src/components/SavingsCard.tsx
+
 import React from 'react';
 import { EyeOff, Wallet, Send } from 'lucide-react';
 

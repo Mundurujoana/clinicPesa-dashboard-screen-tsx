@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import SavingsCard from './components/SavingsCard';
@@ -18,8 +18,14 @@ function App() {
   const [activeTab, setActiveTab] = useState('account');
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const nextIndex = (idx: number) => (idx + 1) % savingsCards.length;
-  const goToIndex = (idx: number) => setActiveIndex(idx);
+  // Auto-rotate every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % savingsCards.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <motion.div
@@ -32,14 +38,14 @@ function App() {
       <div className="bg-white shadow-sm rounded-b-1xl pb-2">
         <Header username="Robert" />
 
-        {/* ANIMATED SINGLE CARD */}
-        <div className="relative h-[130px] bg-white  pb-2">
+        {/* FADE-ONLY CARD */}
+        <div className="relative h-[130px] bg-white pb-2">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
-              initial={{ x: 80, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -80, opacity: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.35 }}
               className="absolute w-full flex justify-center"
             >
@@ -48,18 +54,16 @@ function App() {
           </AnimatePresence>
         </div>
 
-        {/* SMALL DOT INDICATORS */}
-
+        {/* SMALL DOT INDICATORS (DISPLAY ONLY — NOT CLICKABLE) */}
         <div className="flex justify-center gap-2 mt-4">
           {savingsCards.map((_, idx) => (
             <span
               key={idx}
-              className={`transition-all duration-300 cursor-pointer ${
+              className={`transition-all duration-300 ${
                 activeIndex === idx
                   ? 'w-4 h-1 bg-warmYellow rounded-sm'
                   : 'w-1.5 h-1.5 bg-gray-400 rounded-full'
               }`}
-              onClick={() => setActiveIndex(idx)}
             />
           ))}
         </div>

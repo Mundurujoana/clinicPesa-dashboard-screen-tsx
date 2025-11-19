@@ -9,8 +9,7 @@ interface Transaction {
 export default function TransactionHistory() {
   return (
     <div className="text-center py-12 ">
-   <p className="text-xs text-center text-grayText">
-No transactions recorded yet</p>
+      <p className="text-xs text-center text-grayText">No transactions recorded yet</p>
     </div>
   );
 }

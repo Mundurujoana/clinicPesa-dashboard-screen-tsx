@@ -62,7 +62,6 @@
 
 // export default App;
 
-
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
@@ -94,7 +93,7 @@ function App() {
       transition={{ duration: 0.6 }}
     >
       {/* TOP WHITE SECTION */}
-    <div className="bg-white shadow-sm rounded-b-1xl pb-2">
+      <div className="bg-white shadow-sm rounded-b-1xl pb-2">
         <Header username="Robert" />
 
         {/* ANIMATED SINGLE CARD */}
@@ -139,9 +138,9 @@ function App() {
         {activeTab === 'transactions' && <TransactionHistory />}
       </div>
 
-<div className="fixed bottom-2 left-0 right-0">
-  <FooterNote />
-</div>
+      <div className="fixed bottom-2 left-0 right-0">
+        <FooterNote />
+      </div>
     </motion.div>
   );
 }

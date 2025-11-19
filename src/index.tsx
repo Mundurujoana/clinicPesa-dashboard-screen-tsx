@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-   <div className="font-publicSans">
+    <div className="font-publicSans">
       <App />
     </div>
   </React.StrictMode>,

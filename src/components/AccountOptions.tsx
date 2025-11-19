@@ -1,4 +1,3 @@
-// src/components/AccountOptions.tsx
 import OptionCard from './OptionCard';
 import { CreditCard, Handshake, Users, CheckCircle } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const options = [
 
 export default function AccountOptions() {
   return (
-    <div className="grid grid-cols-2 gap-3 bg-graySoft -mt-12">
+    <div className="grid grid-cols-2 gap-3 pt-0">
       {options.map((option) => (
         <OptionCard key={option.id} option={option} />
       ))}

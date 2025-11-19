@@ -7,7 +7,7 @@ module.exports = {
         headerCurve: "#004464", 
         savingsBg: "#ccdce3",   
         appText: "#004f71", 
-        warmYellow: "#ffcb05", 
+        warmYellow: "#ffcb05 ", 
         graySoft: "#f1f1f1",    
         borderGray: "#e0e0e0",  
         grayText: "#666666", 

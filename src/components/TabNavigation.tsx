@@ -11,27 +11,9 @@ export default function TabNavigation({ activeTab, onTabChange }: TabNavigationP
   ];
 
   return (
-    <div className="flex flex-col bg-graySoft items-center mb-6">
-      <div className="flex gap-3 mb-2 items-center">
-        {tabs.map((tab) => {
-          const isActive = activeTab === tab.id;
-          return (
-            <span
-              key={tab.id}
-              className={`
-                transition-all duration-300
-                ${
-                  isActive
-                    ? 'w-[12px] h-[4px] bg-warmYellow rounded-sm'
-                    : 'w-[4.8px] h-[4.8px] bg-gray-400 rounded-full'
-                }
-              `}
-            ></span>
-          );
-        })}
-      </div>
+    <div className="flex flex-col items-center mt-8 w-full">
 
-      <div className="flex gap-4 border-b border-borderGray w-full justify-center">
+      <div className="flex gap-4 w-full justify-center relative">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -43,9 +25,17 @@ export default function TabNavigation({ activeTab, onTabChange }: TabNavigationP
             `}
           >
             {tab.label}
-            {activeTab === tab.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-warmYellow rounded-full"></div>
-            )}
+
+            {/* Smooth underline */}
+            <div
+              className={`
+                absolute bottom-0 left-0 right-0 h-1 bg-warmYellow 
+                rounded-tl-full rounded-tr-full
+                transition-all duration-300 ease-in-out
+                ${activeTab === tab.id ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}
+                origin-left
+              `}
+            ></div>
           </button>
         ))}
       </div>

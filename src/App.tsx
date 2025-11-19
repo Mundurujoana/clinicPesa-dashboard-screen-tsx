@@ -11,21 +11,24 @@ function App() {
   const [activeTab, setActiveTab] = useState<string>('account');
 
   return (
-    <div className="bg-graySoft min-h-screen flex flex-col">
-      <Header username="Robert" />
+    <div className="min-h-screen flex flex-col bg-gray-100"> 
+      {/* 🔥 First 3 sections wrapped in white card */}
+      <div className="bg-white shadow-sm rounded-b-1xl pb-2">
+        <Header username="Robert" />
 
-      <SavingsCard balance={50000} frequency="Monthly" autoSave={1000} />
+        <SavingsCard balance={50000} frequency="Monthly" autoSave={1000} />
 
-      <div className="p-4">
-        <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
+          <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
       </div>
 
+      {/* 🔥 Content area (not white) */}
       <div className="p-4 flex-grow">
         {activeTab === 'account' && <AccountOptions />}
         {activeTab === 'invest' && <InvestOptions />}
         {activeTab === 'transactions' && <TransactionHistory />}
       </div>
 
+      {/* Footer */}
       <div className="mt-auto">
         <FooterNote />
       </div>

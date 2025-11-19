@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ username = 'Robert' }) => {
         {/* Top Navigation */}
         <div className="flex justify-between items-center px-4">
           <ChevronLeftIcon className="h-5 w-5 text-warmYellow cursor-pointer" />
-          <h1 className="font-bold text-lg">clinicPesa</h1>
+         <h1 className="font-bold text-[20px]">clinicPesa</h1>
           <XMarkIcon className="h-5 w-5 text-warmYellow cursor-pointer" />
         </div>
 

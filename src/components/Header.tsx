@@ -19,13 +19,13 @@ const Header: React.FC<HeaderProps> = ({ username = 'Robert' }) => {
         {/* Top Navigation */}
         <div className="flex justify-between items-center px-4">
           <ChevronLeftIcon className="h-5 w-5 text-warmYellow cursor-pointer" />
-         <h1 className="font-bold text-[20px]">clinicPesa</h1>
+         <h1 className="font-bold text-[18px]">clinicPesa</h1>
           <XMarkIcon className="h-5 w-5 text-warmYellow cursor-pointer" />
         </div>
 
         {/* Greeting */}
-        <div className="text-center mt-2 px-4">
-          <p className="text-sm">Good Morning, {username}</p>
+        <div className="text-center mt-4 px-4">
+          <p className="text-[12px]">Good Morning, {username}</p>
         </div>
       </div>
     </header>

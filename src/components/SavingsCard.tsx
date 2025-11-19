@@ -9,7 +9,7 @@ interface SavingsCardProps {
 
 const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave }) => {
   return (
-    <div className="relative z-10 bg-white rounded-2xl shadow-lg p-2 -mt-10 mx-auto w-[310px] h-10px]">
+    <div className="relative z-10 bg-white rounded-2xl shadow-lg p-2 -mt-10 mx-auto w-[320px] h-10px]">
       <span className="absolute -top-0 -left-0 bg-savingsBg text-appText px-1 py-1 rounded-tl-2xl rounded-br-lg text-[10px] font-bold">
         Savings
       </span>

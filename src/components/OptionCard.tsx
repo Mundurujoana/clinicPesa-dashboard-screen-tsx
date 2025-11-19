@@ -10,7 +10,7 @@ export default function OptionCard({ option }: OptionCardProps) {
   const Icon = option.icon;
 
   return (
-    <div className="flex flex-col items-center p-3 bg-white rounded-xl shadow border border-borderGray cursor-pointer">
+    <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow border border-borderGray cursor-pointer">
       <Icon className="w-6 h-6 text-appText mb-1" />
       <p className="text-[12px] text-center text-grayText">{option.title}</p>
     </div>

@@ -24,13 +24,13 @@ const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave 
         </div>
       </div>
 
-      <div className="flex mt-2 text-grayText ml-10 text-[9px]">
-        <div className="flex space-x-1">
+      <div className="flex mt-2 text-grayText  text-[9px]">
+        <div className="flex space-x-1 ml-5">
           <span>Frequency:</span>
           <span className="font-semibold">{frequency}</span>
         </div>
-        <div className="flex space-x-1 ml-12">
-          <span>AutoSave:</span>
+        <div className="flex space-x-1 ml-10">
+          <span>AutoSave amount:</span>
           <span className="font-semibold">UGX {autoSave.toLocaleString()}</span>
         </div>
       </div>

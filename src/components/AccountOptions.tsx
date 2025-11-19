@@ -10,7 +10,7 @@ const options = [
 
 export default function AccountOptions() {
   return (
-    <div className="grid grid-cols-2 gap-3 pt-0">
+    <div className="grid grid-cols-2 gap-3">
       {options.map((option) => (
         <OptionCard key={option.id} option={option} />
       ))}

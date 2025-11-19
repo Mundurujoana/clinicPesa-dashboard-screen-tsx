@@ -9,7 +9,7 @@ interface SavingsCardProps {
 
 const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave }) => {
   return (
-    <div className="relative z-10 bg-white rounded-2xl shadow-lg p-2 -mt-8 mx-4">
+    <div className="relative z-10 bg-white rounded-2xl shadow-lg p-1 -mt-8 mx-4">
       <span className="absolute -top-0 -left-0 bg-savingsBg text-savingsText px-3 py-1 rounded-tl-2xl rounded-br-lg text-xs font-semibold">
         Savings
       </span>
@@ -24,12 +24,12 @@ const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave 
         </div>
       </div>
 
-      <div className="flex mt-2 text-grayText ml-6 text-[10px]">
+      <div className="flex mt-2 text-grayText ml-10 text-[10px]">
         <div className="flex space-x-1">
           <span>Frequency:</span>
           <span className="font-semibold">{frequency}</span>
         </div>
-        <div className="flex space-x-1 ml-10">
+        <div className="flex space-x-1 ml-12">
           <span>AutoSave:</span>
           <span className="font-semibold">UGX {autoSave.toLocaleString()}</span>
         </div>

@@ -10,8 +10,8 @@ const Header: React.FC<HeaderProps> = ({ username = 'Robert' }) => {
       <div
         className="bg-[#004464] w-full overflow-hidden"
         style={{
-          paddingTop: '1.25rem',    // pt-5
-          paddingBottom: '3rem',     // smaller pb to prevent extra height
+          paddingTop: '1.25rem', // pt-5
+          paddingBottom: '3rem', // smaller pb to prevent extra height
           borderBottomLeftRadius: '50% 25%',
           borderBottomRightRadius: '50% 25%',
         }}

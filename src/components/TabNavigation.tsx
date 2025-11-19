@@ -12,7 +12,6 @@ export default function TabNavigation({ activeTab, onTabChange }: TabNavigationP
 
   return (
     <div className="flex flex-col items-center mt-5 w-full">
-
       <div className="flex gap-4 w-full justify-center relative">
         {tabs.map((tab) => (
           <button

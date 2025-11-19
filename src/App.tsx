@@ -55,7 +55,7 @@ function App() {
         </div>
 
         {/* SMALL DOT INDICATORS (DISPLAY ONLY — NOT CLICKABLE) */}
-        <div className="flex justify-center gap-2 mt-4">
+        <div className="flex justify-center gap-2 mb-3">
           {savingsCards.map((_, idx) => (
             <span
               key={idx}

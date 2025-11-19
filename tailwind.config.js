@@ -17,7 +17,7 @@ module.exports = {
 
       },
       fontFamily: {
-        leagueSpartan: ['"League Spartan"', 'sans-serif'],
+    sans: ['Public Sans', 'sans-serif'],
       },
     },
   },

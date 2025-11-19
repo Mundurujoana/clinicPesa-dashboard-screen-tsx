@@ -12,7 +12,9 @@ export default function OptionCard({ option }: OptionCardProps) {
   return (
     <div className="flex flex-col items-center p-3 bg-white rounded-xl shadow border border-borderGray">
       <Icon className="w-6 h-6 text-appText mb-2" />
-      <p className=" text-center text-grayText">{option.title}</p>
+<p className="text-[10px] text-center text-grayText">
+  {option.title}
+</p>
     </div>
   );
 }

@@ -9,7 +9,7 @@ interface SavingsCardProps {
 
 const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave }) => {
   return (
-    <div className="relative z-10 bg-white rounded-2xl shadow-lg p-1 -mt-8 mx-4">
+    <div className="relative z-10 bg-white rounded-2xl shadow-lg p-2 -mt-8 mx-6">
       <span className="absolute -top-0 -left-0 bg-savingsBg text-savingsText px-3 py-1 rounded-tl-2xl rounded-br-lg text-xs font-semibold">
         Savings
       </span>
@@ -24,7 +24,7 @@ const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave 
         </div>
       </div>
 
-      <div className="flex mt-2 text-grayText ml-10 text-[10px]">
+      <div className="flex mt-2 text-grayText ml-10 text-[9px]">
         <div className="flex space-x-1">
           <span>Frequency:</span>
           <span className="font-semibold">{frequency}</span>
@@ -36,14 +36,14 @@ const SavingsCard: React.FC<SavingsCardProps> = ({ balance, frequency, autoSave 
       </div>
 
       <div className="flex justify-between mt-4 border-t border-borderGray pt-2">
-        <button className="flex-1 flex flex-col items-center text-appText font-semibold text-sm">
-          <Wallet className="h-4 w-4 mb-1" />
+        <button className="flex-1 flex flex-col items-center text-appText font-semibold text-[12px]">
+          <Wallet className="h-4 w-4 mb-1 " />
           Deposit
         </button>
 
         <div className="border-l mx-2 border-warmYellow" />
 
-        <button className="flex-1 flex flex-col items-center text-appText font-semibold text-sm">
+        <button className="flex-1 flex flex-col items-center text-appText font-semibold text-[12px]">
           <Send className="h-4 w-4 mb-1" />
           Share Medical
         </button>
